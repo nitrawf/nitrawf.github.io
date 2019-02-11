@@ -1,0 +1,89 @@
+.navbar{ background:#6a1b9a;}
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{ background: #f4f4f4; color: #6a1b9a; }
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  background:#fff !important;}
+
+/*header style*/
+.header{
+    background-image: url('../images/headerback.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*overlay*/
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+/*description*/
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1{
+    color:#6a1b9a ;
+}
+.description p{
+    color:#9c4dcc;
+    font-size: 20px;
+    width: 60%;
+    line-height: 1.5;
+}
+
+/*about*/
+.about{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+.about h1{
+    color:#6a1b9a;
+    margin: 2em;
+    text-align: center
+}
+.about img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+    display: block;
+    color: #888;  
+    left: 115px;
+    text-align: justify;
+}
+.about .desc{
+    padding: 2em;
+    border-left:4px solid #38006b;
+}
+.about .desc h3{
+    color: #6a1b9a;
+}
+.about .desc p{
+    line-height:2;
+    color:#9c4dcc;
+}
+
+/*skills*/
+.skills{
+    margin: 4em 0;
+    position: relative; 
+}
+.skills h1{
+    color:#6a1b9a;
+    margin: 2em; 
+}
+.skills img{
+    height: 15rem;
+    margin: 1em;
+}
