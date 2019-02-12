@@ -8,32 +8,33 @@
         <title>Nitro land!</title>
     </head>
     <body>
-        <!-- navbar -->  
-		<nav class="navbar navbar-expand-lg fixed-top ">  
-			<a class="navbar-brand" href="#">Home</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse " id="navbarSupportedContent">     
-				<ul class="navbar-nav mr-4">
-					<li class="nav-item">
-						<a class="nav-link" data-value="about" href="#about">About</a>        
-					</li>  
-					<li class="nav-item">
-						<a class="nav-link " data-value="skills"href="#skills">Skills</a>    
-					</li>
-					<li class="nav-item"> 
-						<a class="nav-link " data-value="projects" href="#projects">Projects</a>         
-					</li>   
-					<li class="nav-item">  
-						<a class="nav-link " data-value="team" href="#"> Team</a>      
-					</li>  
-					<li class="nav-item"> 
-						<a class="nav-link " data-value="contact" href="#">Contact</a>       
-					</li> 
-				</ul> 
-			</div>
-		</nav>
+		<!-- navbar -->
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top ">  
+				<a class="navbar-brand" href="#">Home</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">     
+					<ul class="navbar-nav mr-4">
+						<li class="nav-item">
+							<a class="nav-link" data-value="about" href="#about">About</a>        
+						</li>  
+						<li class="nav-item">
+							<a class="nav-link " data-value="skills"href="#skills">Skills</a>    
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link " data-value="projects" href="#projects">Projects</a>         
+						</li>   
+						<li class="nav-item"> 
+							<a class="nav-link " data-value="contact" href="#contact">Contact</a>       
+						</li> 
+					</ul> 
+				</div>
+			</nav>
+		</div> 
+		
+		<!-- Header -->
 		<header class="header">
 			<div class="overlay"></div>
 			<div class="container">
@@ -43,28 +44,34 @@
 				</div>
 			</div>
 		</header>
+
+
+		<!-- About -->
 		<div class="about" id="about">
-			<h1> About me uwu</h1>
+	
 			<div class="container">
+				<h1> About me uwu</h1>
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12">
-						<img src="images/mepic.png" class="img-fluid">
-						<span class="text-center">I am a Big Noob</span>	
+						<img src="images/mepic.jpg" class="img-fluid">	
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 desc">
 						<h3>
-							Anish D.			
+							Anish D.
+							<a href="https://github.com/nitrawf">
+								<img src="images/github.png" height="15%" width="15%">
+								</img>
+							</a> 			
 						</h3>
 						<p>
-							Computer Engineering student at VIT, Mumbai.<br>
+							Computer Engineering student at VIT, Mumbai.
+							 
+							<br>
 							Likes to code in python and this website is an experiment in web dev.
 							bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla <br>
 							bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
 							bla bla bla bla bla bla<br>
-							<a href="https://github.com/nitrawf">
-								<img src="images/github.png" height="16" width="16">
-								</img>
-							</a>  
+						  
 						</p>
 					</div>
 				</div>
@@ -87,8 +94,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- Posts section -->
-		<div class="projects">
+		
+		<!-- Projects -->
+		<div class="projects" id="projects">
 			<div class="container">
 				<h1 class="text-center">Projects</h1>
 				<div class="row">
@@ -143,6 +151,32 @@
 				</div>
 			</div>
 	   </div>
+
+		<!-- Contact form -->
+		<div class="contact-form" id="contact">
+			<div class="container">
+				<form>
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<h1>Get in Touch</h1> 
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-12 right">
+							<div class="form-group">
+								<input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control form-control-lg">					
+								</textarea>
+							</div>
+							<input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
